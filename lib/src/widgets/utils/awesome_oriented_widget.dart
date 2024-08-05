@@ -31,7 +31,7 @@ class AwesomeOrientedWidgetState extends State<AwesomeOrientedWidget> {
           if (orientation != null && orientation != previousOrientation) {
             turns = shortestTurnsToReachTarget(
               current: turns,
-              target: getTurns(orientation) + 0.5,
+              target: getTurns(orientation),
             );
             previousOrientation = orientation;
           }
